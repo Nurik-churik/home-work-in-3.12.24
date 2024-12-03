@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Book {
+  constructor(title, author, pages, isRead) {
+    this.title = title; 
+    this.author = author; 
+    this.pages = pages;  
+    this.isRead = isRead; 
+  }
+
+ 
+  readBook() {
+    console.log(`Сіз "${this.title}" кітабын "${this.author}" жазған оқып жатырсыз.`);
+  }
+
+  
+  toggleReadStatus() {
+    this.isRead = !this.isRead;
+    console.log(`Оқу күйі жаңартылды: ${this.isRead}.`);
+  }
+}
+
+
+let myBook = new Book("Қазақ әдебиеті", "Мұхтар Әуезов", 500, false);
+
+
+myBook.readBook(); 
+myBook.toggleReadStatus(); 
+
+
+//ағай улгермедым уйде 
+
+    </script>
+</body>
+</html>
